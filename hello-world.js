@@ -1,5 +1,22 @@
-console.log("Hello World!");
+// console.log("Hello World!");
 
-setTimeout(function(){
+// setTimeout(function(){
+//     console.log("Hello World!");
+// }, 10000)
+
+
+
+// while (true){
+//     setTimeout(function() {
+//         console.log("Hello World");
+//     }, 10000);
+// }
+
+function setInter (){
     console.log("Hello World!");
-}, 10000)
+    setTimeout(function() {
+        setInter();
+    }, 1000);
+}
+
+setInter();
